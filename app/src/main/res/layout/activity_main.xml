@@ -1,0 +1,248 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:overScrollMode="never"
+    android:background="@drawable/login_wallpaper">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:id="@+id/signup_personal_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#00ffffff"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#dddddd" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signup_first_name_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:drawableStart="@drawable/ic_people_black_24dp"
+                android:drawablePadding="20dp"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signup_last_name_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_people_black_24dp"
+                android:drawablePadding="20dp"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"/>
+            <Spinner
+                android:id="@+id/signup_profile_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="20dp"
+                android:drawSelectorOnTop="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:entries="@array/profile"/>
+            <Spinner
+                android:id="@+id/signup_gender_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="20dp"
+                android:drawSelectorOnTop="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:entries="@array/gender"/>
+            <Spinner
+                android:id="@+id/signup_marital_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:drawablePadding="20dp"
+                android:drawSelectorOnTop="true"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:entries="@array/marital"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="D.O.B:-"
+                    android:textSize="25sp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginRight="30dp"/>
+
+                <EditText
+                    android:id="@+id/date"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLength="2"/>
+                <TextView
+                    android:id="@+id/s"
+                    android:layout_alignRight="@id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:layout_alignRight="@id/s"
+                    android:id="@+id/month"
+                    android:layout_width="30dp"
+                    android:maxLength="2"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/s1"
+                    android:layout_alignRight="@id/month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="4"
+                    android:gravity="center"
+                    android:layout_alignRight="@id/month"
+                    android:drawableEnd="@drawable/ic_calendar"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/signup_signup_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/signup_account_detail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#00ffffff"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account Details"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="10dp"
+                android:background="#dddddd" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signup_email_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email-id"
+                android:inputType="textEmailAddress"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="20dp"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signup_password_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableEnd="@drawable/ic_baseline_visibility_off_24px"
+                android:drawablePadding="20dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signup_repassword_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_password"
+                android:drawableEnd="@drawable/ic_baseline_visibility_off_24px"
+                android:drawablePadding="20dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"/>
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/signup_mobile_no_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile No"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="20dp"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                android:paddingStart="8dp"
+                android:paddingEnd="12dp"
+                android:enabled="false"/>
+
+            <Button
+                android:id="@+id/signup_next_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next" />
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</ScrollView>

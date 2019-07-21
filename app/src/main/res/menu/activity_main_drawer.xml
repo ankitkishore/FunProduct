@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group>
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_search_by_id"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Search By Id" />
+        <item
+            android:id="@+id/nav_advance_search"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Advance Search" />
+        <item
+            android:id="@+id/nav_my_match"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My Match" />
+        <item
+            android:id="@+id/nav_short_list"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Short List" />
+        <item
+            android:id="@+id/nav_recent_view"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Recent View" />
+        <item
+            android:id="@+id/nav_who_viewed_my_contact_no"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Who Viewed My Contact No" />
+        <item
+            android:id="@+id/nav_interest_send"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Interest Send" />
+        <item
+            android:id="@+id/nav_interest_received"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Interest Received" />
+        <item
+            android:id="@+id/nav_acceptances_members"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Acceptances Members" />
+        <item
+            android:id="@+id/nav_declined_member"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Declined Members" />
+        <item
+            android:id="@+id/nav_blocked"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Blocked/Ignore" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Logout" />
+        <item
+            android:id="@+id/footer_spacer_1"
+            android:checkable="false"
+            android:enabled="false"
+            android:orderInCategory="200"
+            android:title="" />
+    </group>
+
+</menu>

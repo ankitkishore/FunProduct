@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_about_us"
+        android:orderInCategory="100"
+        android:title="About Us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_privacy_policy"
+        android:orderInCategory="100"
+        android:title="Privacy Policy"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_term_and_condition"
+        android:orderInCategory="100"
+        android:title="Term and Conditions"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_safe_matrimony"
+        android:orderInCategory="100"
+        android:title="Safe matrimony"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_FAQ"
+        android:orderInCategory="100"
+        android:title="FAQ"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_Contact_us"
+        android:orderInCategory="100"
+        android:title="Contact us"
+        app:showAsAction="never" />
+</menu>
