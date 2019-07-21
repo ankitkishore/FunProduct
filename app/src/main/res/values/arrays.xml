@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="manglik" >
+        <item>Manglik</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="environment_array">
+        <item>Test</item>
+        <item>Production</item>
+    </string-array>
+    <string-array name="profile">
+        <item>Profile</item>
+        <item>SelfU</item>
+        <item>Parent</item>
+        <item>Sibling</item>
+        <item>Friend</item>
+        <item>Relative</item>
+        <item>Marriage Bureau</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="marital">
+        <item>Marital</item>
+        <item>Un-married</item>
+        <item>Widowed</item>
+        <item>Awaiting Divorce</item>
+        <item>Divorce</item>
+        <item>Annulled</item>
+    </string-array>
+    <string-array name="complexion" >
+        <item>Complextion</item>
+        <item>Fair</item>
+        <item>Dark</item>
+        <item>Wheatish</item>
+        <item>Very Fair</item>
+    </string-array>
+    <string-array name="body_type" >
+        <item>Body type</item>
+        <item>Average</item>
+        <item>Slim</item>
+        <item>Athletic</item>
+        <item>Heavy</item>
+    </string-array>
+    <string-array name="education">
+        <item>Heavy</item>
+    </string-array>
+</resources>

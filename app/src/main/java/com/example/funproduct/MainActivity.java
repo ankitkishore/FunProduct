@@ -179,7 +179,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
                 DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 
-        Volley.newRequestQueue(this).add(stringRequest);
+//        Volley.newRequestQueue(this).add(stringRequest);
     }
 
     private void nextStep(){
@@ -189,9 +189,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             makeToast("Password Should be more then 1 letter");
         else if(signup_repassword_editText.getText().toString().length()<1)
             makeToast("Repass Should be more then 1 letter");
-        else if(signup_mobile_no_editText.getText().toString().length()<1)
+        else /*if(signup_mobile_no_editText.getText().toString().length()<1)
             makeToast("Mobile Should be of 10 digit");
-        else if(!signup_password_editText.getText().toString().equals(signup_repassword_editText.getText().toString()))
+        else */if(!signup_password_editText.getText().toString().equals(signup_repassword_editText.getText().toString()))
             makeToast("Re-password and password need to be same");
         else{
             signup_personal_detail_layout.setVisibility(View.VISIBLE);
